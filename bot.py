@@ -99,6 +99,6 @@ class SafeForwardBot:
 
 if __name__ == "__main__":
     import os
-    TOKEN = os.getenv("TELEGRAM_BOT_TOKEN") or "7620192933:AAEl7Ke9gjlP27syCf60Ox5FC0KXGHDieYY"
+    TOKEN = os.getenv("TELEGRAM_BOT_TOKEN") or "your tokenTOKEN"
     bot = SafeForwardBot(TOKEN)
     bot.run()
