@@ -33,7 +33,7 @@ class SafeForwardBot:
         self.app.add_handler(CommandHandler("start", self.start))
         self.app.add_handler(CommandHandler("myid", self.myid))
         self.app.add_handler(MessageHandler(filters.ALL, self.handle_message))  # Changed to ALL
-
+        TOKEN = "7620192933:AAEl7Ke9gjlP27syCf60Ox5FC0KXGHDieYY"  # Replace with the token from @BotFather
     async def start(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(
             "🔍 Send or forward any message to get info\n"
